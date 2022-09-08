@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct SelectButton: View {
+    @Binding var isSelected: Bool
+    @State var color: Color
+    @State var text: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Capsule()
+                .frame(height: 50)
+                .foregroundColor(isSelected ? color: .gray)
+            Text(text)
+                .foregroundColor(.white)
+        }
     }
 }
 
 struct SelectButton_Previews: PreviewProvider {
     static var previews: some View {
-        SelectButton()
+        SelectButton(isSelected: .constant(false), color: .pink, text: "Bitches")
     }
 }
