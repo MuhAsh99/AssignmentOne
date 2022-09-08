@@ -8,29 +8,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var label: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    @IBAction func sliderValueChanged(_sender: Any){
+        label.text = "fuck"
+    }
+}
+        
+        //PREVIOUS CODE FOR A LABEL
+
+
         // Do any additional setup after loading the view.
         //this is a comment
         
-//        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-//          button.backgroundColor = .green
-//          button.setTitle("Test Button", for: .normal)
-//          button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-//          self.view.addSubview(button)
-//
-//     }
-//        @objc func buttonAction(sender: UIButton!) {
-//        print("Button tapped")
         
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-            label.center = CGPoint(x: 160, y: 285)
-            label.textAlignment = .center
-            label.text = "I'm a test label"
-
-            self.view.addSubview(label)
+//        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+//            label.center = CGPoint(x: 160, y: 285)
+//            label.textAlignment = .center
+//            label.text = "I'm a test label"
+//
+//            self.view.addSubview(label)
 //    }
-}
 
-}
+
+
