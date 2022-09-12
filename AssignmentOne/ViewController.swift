@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func sliderValueChanged(_sender: Any){
-        label.text = "fuck"
+        label.text = "hi"
     }
 }
         
