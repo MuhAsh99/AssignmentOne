@@ -9,16 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var slider: UISlider!
-    @IBOutlet weak var label: UILabel!
+   // @IBOutlet weak var slider: UISlider!
+  //  @IBOutlet weak var label: UILabel!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let twoLineButton = TwoLinedButton(frame: CGRect(x: 0, y: 0, width: 220, height: 55))
+        view.addSubview(twoLineButton)
+        twoLineButton.center = view.center
+        twoLineButton.configure(with: TwoLinedButtonViewModel(
+            primaryText: "I am first",
+            secondaryText: "I am second"))
     }
-    @IBAction func sliderValueChanged(_sender: Any){
-        label.text = "hi"
-    }
+//    @IBAction func sliderValueChanged(_sender: Any){
+//        label.text = "hi"
+//    }
 }
         
         //PREVIOUS CODE FOR A LABEL
@@ -34,7 +40,7 @@ class ViewController: UIViewController {
 //            label.text = "I'm a test label"
 //
 //            self.view.addSubview(label)
+//
 //    }
-
 
 
