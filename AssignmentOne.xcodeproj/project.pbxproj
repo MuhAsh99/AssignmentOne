@@ -17,6 +17,7 @@
 		52F9C60528D2B990004181E1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60428D2B990004181E1 /* Button.swift */; };
 		52F9C60728D2B9B1004181E1 /* IconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60628D2B9B1004181E1 /* IconTextButton.swift */; };
 		8B27F70E28D0D79E0071806D /* PickGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27F70D28D0D79E0071806D /* PickGender.swift */; };
+		8BEE453428D3C8E100A9EB2B /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE453328D3C8E100A9EB2B /* ImageModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		52F9C60428D2B990004181E1 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		52F9C60628D2B9B1004181E1 /* IconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextButton.swift; sourceTree = "<group>"; };
 		8B27F70D28D0D79E0071806D /* PickGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickGender.swift; sourceTree = "<group>"; };
+		8BEE453128D3C8E000A9EB2B /* AssignmentOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentOne-Bridging-Header.h"; sourceTree = "<group>"; };
+		8BEE453228D3C8E100A9EB2B /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		8BEE453328D3C8E100A9EB2B /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,9 @@
 				52F9C60428D2B990004181E1 /* Button.swift */,
 				52F9C60628D2B9B1004181E1 /* IconTextButton.swift */,
 				52E26A5D28D39C950043D807 /* TableViewController.swift */,
+				8BEE453228D3C8E100A9EB2B /* ImageModel.h */,
+				8BEE453328D3C8E100A9EB2B /* ImageModel.m */,
+				8BEE453128D3C8E000A9EB2B /* AssignmentOne-Bridging-Header.h */,
 			);
 			path = AssignmentOne;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 				TargetAttributes = {
 					52D74C7E28C6CF0E00686263 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -153,6 +161,7 @@
 				52F9C60528D2B990004181E1 /* Button.swift in Sources */,
 				52E26A5E28D39C950043D807 /* TableViewController.swift in Sources */,
 				52F9C60728D2B9B1004181E1 /* IconTextButton.swift in Sources */,
+				8BEE453428D3C8E100A9EB2B /* ImageModel.m in Sources */,
 				52D74C8728C6CF0E00686263 /* ViewController.swift in Sources */,
 				52D74C8328C6CF0E00686263 /* AppDelegate.swift in Sources */,
 				52D74C8528C6CF0E00686263 /* SceneDelegate.swift in Sources */,
@@ -301,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
@@ -318,6 +328,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "CS-5323.AssignmentOne";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AssignmentOne/AssignmentOne-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
@@ -345,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "CS-5323.AssignmentOne";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AssignmentOne/AssignmentOne-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
