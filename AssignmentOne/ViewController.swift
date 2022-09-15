@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     
     @IBAction func nextPage(_ sender: Any) {
         print("Clicked")
+        
+    myLabel.text = "Weather Around The World"
+
     }
     
     override func viewDidLoad() {
@@ -28,7 +31,6 @@ class ViewController: UIViewController {
 //        twoLineButton.configure(with: TwoLinedButtonViewModel(
 //            primaryText: "I am first",
 //            secondaryText: "I am second"))
-        self.myLabel.text = "Weather Around The World"
     }
 //    @IBAction func sliderValueChanged(_sender: Any){
 //        label.text = "hi"
