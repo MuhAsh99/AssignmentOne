@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-   // @IBOutlet weak var slider: UISlider!
-  //  @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var label: UILabel!
     
 
     override func viewDidLoad() {
@@ -22,16 +22,15 @@ class ViewController: UIViewController {
             primaryText: "I am first",
             secondaryText: "I am second"))
     }
-//    @IBAction func sliderValueChanged(_sender: Any){
-//        label.text = "hi"
-//    }
+    @IBAction func sliderValueChanged(_sender: Any){
+        label.text = "hi"
+    }
 }
         
-        //PREVIOUS CODE FOR A LABEL
 
 
-        // Do any additional setup after loading the view.
-        //this is a comment
+
+
         
         
 //        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
@@ -40,7 +39,7 @@ class ViewController: UIViewController {
 //            label.text = "I'm a test label"
 //
 //            self.view.addSubview(label)
-//
-//    }
+
+  //  }
 
 
