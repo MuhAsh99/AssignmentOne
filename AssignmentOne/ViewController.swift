@@ -13,8 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
 
+    
     @IBOutlet weak var
         myLabel: UILabel!
+    
     
     @IBAction func nextPage(_ sender: Any) {
         print("Clicked")
