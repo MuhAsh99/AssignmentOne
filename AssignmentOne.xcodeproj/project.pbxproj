@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5222715A28CFD4B8008B2842 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222715928CFD4B8008B2842 /* StepperView.swift */; };
-		52BE022328CFDC79004F579A /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE022228CFDC79004F579A /* SwitchView.swift */; };
 		52CCE55B28CA6E3200F644D9 /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CCE55A28CA6E3100F644D9 /* SelectButton.swift */; };
 		52CCE55D28CA726400F644D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CCE55C28CA726400F644D9 /* ContentView.swift */; };
 		52D74C8328C6CF0E00686263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D74C8228C6CF0E00686263 /* AppDelegate.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		5222715928CFD4B8008B2842 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
-		52BE022228CFDC79004F579A /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		52CCE55A28CA6E3100F644D9 /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
 		52CCE55C28CA726400F644D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52D74C7F28C6CF0E00686263 /* AssignmentOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +74,6 @@
 				52CCE55A28CA6E3100F644D9 /* SelectButton.swift */,
 				52CCE55C28CA726400F644D9 /* ContentView.swift */,
 				5222715928CFD4B8008B2842 /* StepperView.swift */,
-				52BE022228CFDC79004F579A /* SwitchView.swift */,
 				8B27F70D28D0D79E0071806D /* PickGender.swift */,
 			);
 			path = AssignmentOne;
@@ -156,7 +153,6 @@
 				52D74C8728C6CF0E00686263 /* ViewController.swift in Sources */,
 				52CCE55D28CA726400F644D9 /* ContentView.swift in Sources */,
 				52CCE55B28CA6E3200F644D9 /* SelectButton.swift in Sources */,
-				52BE022328CFDC79004F579A /* SwitchView.swift in Sources */,
 				52D74C8328C6CF0E00686263 /* AppDelegate.swift in Sources */,
 				5222715A28CFD4B8008B2842 /* StepperView.swift in Sources */,
 				52D74C8528C6CF0E00686263 /* SceneDelegate.swift in Sources */,
