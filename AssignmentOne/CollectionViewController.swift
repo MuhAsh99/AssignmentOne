@@ -10,6 +10,7 @@ class CollectionViewController: UICollectionViewController {
         
         // Register cell classes
         //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        //
     }
     
     
