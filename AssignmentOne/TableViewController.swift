@@ -20,6 +20,10 @@ class TableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    lazy var imageModel = {
+        return ImageModel.sharedInstance()
+    }()
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
