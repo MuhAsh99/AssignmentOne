@@ -15,6 +15,7 @@
 		52D74C8C28C6CF1100686263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D74C8B28C6CF1100686263 /* Assets.xcassets */; };
 		52D74C8F28C6CF1100686263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D74C8D28C6CF1100686263 /* LaunchScreen.storyboard */; };
 		52E26A5E28D39C950043D807 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E26A5D28D39C950043D807 /* TableViewController.swift */; };
+		52E5F0CD28D52EDD00EB8219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5F0CC28D52EDD00EB8219 /* ViewController.swift */; };
 		52F9C60528D2B990004181E1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60428D2B990004181E1 /* Button.swift */; };
 		52F9C60728D2B9B1004181E1 /* IconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60628D2B9B1004181E1 /* IconTextButton.swift */; };
 		8B32C08628D4C72F00DD3D04 /* CitiesPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32C08528D4C72F00DD3D04 /* CitiesPickerViewController.swift */; };
@@ -32,6 +33,7 @@
 		52D74C8E28C6CF1100686263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D74C9028C6CF1100686263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52E26A5D28D39C950043D807 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		52E5F0CC28D52EDD00EB8219 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52F9C60428D2B990004181E1 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		52F9C60628D2B9B1004181E1 /* IconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextButton.swift; sourceTree = "<group>"; };
 		8B32C08528D4C72F00DD3D04 /* CitiesPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesPickerViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				52D74C8428C6CF0E00686263 /* SceneDelegate.swift */,
 				526CCAC628D4CFB900966679 /* CollectionViewController.swift */,
 				526CCAC828D4D00B00966679 /* CollectionViewCell.swift */,
+				52E5F0CC28D52EDD00EB8219 /* ViewController.swift */,
 				52D74C8828C6CF0E00686263 /* Main.storyboard */,
 				52D74C8B28C6CF1100686263 /* Assets.xcassets */,
 				52D74C8D28C6CF1100686263 /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E5F0CD28D52EDD00EB8219 /* ViewController.swift in Sources */,
 				52F9C60528D2B990004181E1 /* Button.swift in Sources */,
 				52E26A5E28D39C950043D807 /* TableViewController.swift in Sources */,
 				526CCAC928D4D00B00966679 /* CollectionViewCell.swift in Sources */,
