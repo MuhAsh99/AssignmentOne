@@ -18,7 +18,6 @@
 		52E5F0CD28D52EDD00EB8219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5F0CC28D52EDD00EB8219 /* ViewController.swift */; };
 		52F9C60528D2B990004181E1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60428D2B990004181E1 /* Button.swift */; };
 		52F9C60728D2B9B1004181E1 /* IconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60628D2B9B1004181E1 /* IconTextButton.swift */; };
-		8B32C08628D4C72F00DD3D04 /* CitiesPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32C08528D4C72F00DD3D04 /* CitiesPickerViewController.swift */; };
 		8BEE453428D3C8E100A9EB2B /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE453328D3C8E100A9EB2B /* ImageModel.m */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		52E5F0CC28D52EDD00EB8219 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52F9C60428D2B990004181E1 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		52F9C60628D2B9B1004181E1 /* IconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextButton.swift; sourceTree = "<group>"; };
-		8B32C08528D4C72F00DD3D04 /* CitiesPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesPickerViewController.swift; sourceTree = "<group>"; };
 		8BEE453128D3C8E000A9EB2B /* AssignmentOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentOne-Bridging-Header.h"; sourceTree = "<group>"; };
 		8BEE453228D3C8E100A9EB2B /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
 		8BEE453328D3C8E100A9EB2B /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				8BEE453228D3C8E100A9EB2B /* ImageModel.h */,
 				8BEE453328D3C8E100A9EB2B /* ImageModel.m */,
 				8BEE453128D3C8E000A9EB2B /* AssignmentOne-Bridging-Header.h */,
-				8B32C08528D4C72F00DD3D04 /* CitiesPickerViewController.swift */,
 			);
 			path = AssignmentOne;
 			sourceTree = "<group>";
@@ -172,7 +169,6 @@
 				8BEE453428D3C8E100A9EB2B /* ImageModel.m in Sources */,
 				526CCAC728D4CFB900966679 /* CollectionViewController.swift in Sources */,
 				52D74C8328C6CF0E00686263 /* AppDelegate.swift in Sources */,
-				8B32C08628D4C72F00DD3D04 /* CitiesPickerViewController.swift in Sources */,
 				52D74C8528C6CF0E00686263 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

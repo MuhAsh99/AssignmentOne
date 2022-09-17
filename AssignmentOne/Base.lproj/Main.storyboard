@@ -208,7 +208,7 @@
         <!--Extras-->
         <scene sceneID="oE5-37-5VW">
             <objects>
-                <viewController id="UBv-mJ-Zwq" sceneMemberID="viewController">
+                <viewController id="UBv-mJ-Zwq" customClass="StartPage" customModule="AssignmentOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dof-fE-XjW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,8 +228,8 @@
                                     <action selector="UIButton:" destination="ta5-sg-saI" eventType="touchUpInside" id="aur-mR-7BD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hello there" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Env-fh-lgH">
-                                <rect key="frame" x="166" y="474" width="83" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Click for Magic" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Env-fh-lgH">
+                                <rect key="frame" x="150" y="474" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
