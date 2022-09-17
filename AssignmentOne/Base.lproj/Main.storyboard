@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hu3-0Q-ZEf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hu3-0Q-ZEf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -19,7 +20,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityViewCell" id="wog-Uu-x5e">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wog-Uu-x5e" id="pfL-8D-Zdu">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -30,10 +31,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CollectionCell" id="Mml-Kk-Q4f">
-                                <rect key="frame" x="0.0" y="88" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="93.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mml-Kk-Q4f" id="ObP-eI-Nv1">
-                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -41,10 +42,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ExtraCell" id="VL1-Rw-ySU">
-                                <rect key="frame" x="0.0" y="131.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="137" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VL1-Rw-ySU" id="tgw-4k-Oxi">
-                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -68,7 +69,7 @@
             <objects>
                 <navigationController title="Start" id="hu3-0Q-ZEf" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NfU-Uq-ss1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -132,14 +133,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6PJ-hb-3Kn">
-                                <rect key="frame" x="0.0" y="147" width="414" height="376"/>
+                                <rect key="frame" x="0.0" y="151" width="414" height="376"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="9jl-k1-W2Q"/>
                                     <constraint firstAttribute="height" constant="376" id="wrt-EG-6NL"/>
                                 </constraints>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I33-Yx-xtL">
-                                <rect key="frame" x="154.5" y="611" width="105" height="32"/>
+                                <rect key="frame" x="154.5" y="615" width="105" height="32"/>
                                 <segments>
                                     <segment title="Day"/>
                                     <segment title="Night"/>
@@ -186,27 +187,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXc-Z0-zxN">
-                                <rect key="frame" x="0.0" y="125" width="414" height="162"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="162"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="0Xi-f1-7gT"/>
                                 </constraints>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufO-Xq-CCB">
-                                <rect key="frame" x="173.5" y="431" width="67" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufO-Xq-CCB">
+                                <rect key="frame" x="170" y="360" width="75" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
                                     <action selector="UIButton:" destination="ta5-sg-saI" eventType="touchUpInside" id="aur-mR-7BD"/>
+                                    <action selector="myButton:" destination="UBv-mJ-Zwq" eventType="touchUpInside" id="cfO-Xj-pKN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click for Magic" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Env-fh-lgH">
-                                <rect key="frame" x="150" y="470" width="114" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click for Magic" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Env-fh-lgH">
+                                <rect key="frame" x="150" y="331" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Org-a5-ZzV">
+                                <rect key="frame" x="42" y="410" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="XYW-kh-Jdj">
+                                <rect key="frame" x="160" y="483" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X3C-9D-8YF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -232,11 +245,14 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Extras" id="KQM-05-zEQ"/>
+                    <connections>
+                        <outlet property="buttony" destination="Org-a5-ZzV" id="kH7-0O-QMD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAK-44-fr4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ta5-sg-saI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="225" y="729"/>
+            <point key="canvasLocation" x="224.63768115942031" y="728.57142857142856"/>
         </scene>
     </scenes>
     <resources>

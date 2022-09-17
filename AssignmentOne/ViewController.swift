@@ -11,8 +11,12 @@ class StartPage: UIViewController {
 
     
     
-    @IBAction func UIButton(_ sender: Any) {
+    @IBOutlet weak var buttony: UILabel!
+    @IBAction func myButton(_ sender: Any) {
+        
+        buttony.text = "Mini Game: Click as many times as you can!"
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
