@@ -7,18 +7,33 @@
 
 import UIKit
 
-class CityViewController: UIViewController {
+class CityViewController: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     
     lazy var imageModel = {
         return ImageModel.sharedInstance()
     }()
     
     var displayImageName = "DallasM"
+    
+    lazy private var imageView: UIImageView? = {
+        return UIImageView.init(image: self.imageModel.getImageWithName(displayImageName))
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let size = self.imageView?.image?.size {
+            self.scrollView.addSubview(self.imageView!)
+            self.scrollView.contentSize = size
+            self.scrollView.minimumZoomScale = 0.1
+            self.scrollView.delegate = self
+        }
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.imageView
     }
     
 
