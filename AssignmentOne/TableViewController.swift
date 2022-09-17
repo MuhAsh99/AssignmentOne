@@ -48,14 +48,14 @@ class TableViewController: UITableViewController {
             
             return cell
         } else if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CityViewCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionCell", for: indexPath)
             
             cell.textLabel?.text = "All Cities"
             
             return cell
             
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CityViewCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ExtraCell", for: indexPath)
             
             cell.textLabel?.text = "Extras"
             
