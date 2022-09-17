@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController:UIViewController {
+class CitiesPickerController:UIViewController {
     
     
     @IBOutlet weak var CitiesPickerDisplay: UITextField!
@@ -29,7 +29,7 @@ class ViewController:UIViewController {
     
 }
 
-extension ViewController:UIPickerViewDelegate, UIPickerViewDataSource{
+extension CitiesPickerController:UIPickerViewDelegate, UIPickerViewDataSource{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
