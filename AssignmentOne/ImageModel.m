@@ -7,8 +7,16 @@
 
 #import "ImageModel.h"
 
+@interface ImageModel ()
+
+@property (strong, nonatomic) NSArray* imageNames;
+@property (strong, nonatomic) NSDictionary* images;
+
+@end
+
 @implementation ImageModel
 @synthesize imageNames = _imageNames;
+@synthesize images = _images;
 
 +(ImageModel*)sharedInstance{
     static ImageModel* _sharedInstance = nil;
@@ -22,18 +30,34 @@
 
 -(NSArray*) imageNames{
     if(!_imageNames)
-        _imageNames = @[@"DallasM",@"DallasN",@"LondonM",@"LondonN",@"TokyoM",@"TokyoN",@"NYCM",@"NYCN",@"LAM",@"LAN"];
+        _imageNames = @[@"DallasM",@"LAM",@"LondonM", @"NYCM", @"TokyoM", @"DallasN",@"LAN",@"LondonN", @"NYCN",@"TokyoN"];
     
     return _imageNames;
 }
 
+-(NSDictionary*) images{
+    if (!_images)
+        _images = @{@"DallasM" : [UIImage imageNamed:@"DallasM"], @"LAM" : [UIImage imageNamed:@"LAM"], @"LondonM" : [UIImage imageNamed:@"LondonM"], @"NYCM" : [UIImage imageNamed:@"NYCM"], @"TokyoM" : [UIImage imageNamed:@"TokyoM"], @"DallasN" : [UIImage imageNamed:@"DallasN"], @"LAN" : [UIImage imageNamed:@"LAN"], @"LondonN" : [UIImage imageNamed:@"LondonN"], @"NYCN" : [UIImage imageNamed:@"NYCN"], @"TokyoN" : [UIImage imageNamed:@"TokyoN"]};
+    return _images;
+}
+
 
 -(UIImage*)getImageWithName:(NSString*)name{
-    UIImage* image = nil;
-    
-    image = [UIImage imageNamed:name];
-    
-    return image;
+    return [self.images objectForKey:name];
 }
+
+-(UIImage*)getImageWithIndex:(NSInteger)index{
+    return [self.images objectForKey:self.imageNames[index]];
+}
+
+-(NSInteger) numberOfImages{
+    return [self.images count];
+}
+
+-(NSString*) getImageNameForIndex:(NSInteger)index {
+    return self.imageNames[index];
+}
+//
+//
 
 @end

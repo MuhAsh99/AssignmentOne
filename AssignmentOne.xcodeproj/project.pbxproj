@@ -15,8 +15,9 @@
 		52E26A5E28D39C950043D807 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E26A5D28D39C950043D807 /* TableViewController.swift */; };
 		52F9C60528D2B990004181E1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60428D2B990004181E1 /* Button.swift */; };
 		52F9C60728D2B9B1004181E1 /* IconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60628D2B9B1004181E1 /* IconTextButton.swift */; };
-		8B8663BF28D4DE3F00C248AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8663BE28D4DE3F00C248AD /* ViewController.swift */; };
+		8B8663BF28D4DE3F00C248AD /* ExtrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8663BE28D4DE3F00C248AD /* ExtrasViewController.swift */; };
 		8BEE453428D3C8E100A9EB2B /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE453328D3C8E100A9EB2B /* ImageModel.m */; };
+		F4F7F38828D543C3004B2722 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7F38728D543C3004B2722 /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +31,11 @@
 		52E26A5D28D39C950043D807 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		52F9C60428D2B990004181E1 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		52F9C60628D2B9B1004181E1 /* IconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextButton.swift; sourceTree = "<group>"; };
-		8B8663BE28D4DE3F00C248AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B8663BE28D4DE3F00C248AD /* ExtrasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasViewController.swift; sourceTree = "<group>"; };
 		8BEE453128D3C8E000A9EB2B /* AssignmentOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentOne-Bridging-Header.h"; sourceTree = "<group>"; };
 		8BEE453228D3C8E100A9EB2B /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
 		8BEE453328D3C8E100A9EB2B /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		F4F7F38728D543C3004B2722 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				52D74C8228C6CF0E00686263 /* AppDelegate.swift */,
 				52D74C8428C6CF0E00686263 /* SceneDelegate.swift */,
 				52D74C8828C6CF0E00686263 /* Main.storyboard */,
+				F4F7F38728D543C3004B2722 /* CityViewController.swift */,
 				52D74C8B28C6CF1100686263 /* Assets.xcassets */,
 				52D74C8D28C6CF1100686263 /* LaunchScreen.storyboard */,
 				52D74C9028C6CF1100686263 /* Info.plist */,
@@ -78,7 +81,7 @@
 				8BEE453228D3C8E100A9EB2B /* ImageModel.h */,
 				8BEE453328D3C8E100A9EB2B /* ImageModel.m */,
 				8BEE453128D3C8E000A9EB2B /* AssignmentOne-Bridging-Header.h */,
-				8B8663BE28D4DE3F00C248AD /* ViewController.swift */,
+				8B8663BE28D4DE3F00C248AD /* ExtrasViewController.swift */,
 			);
 			path = AssignmentOne;
 			sourceTree = "<group>";
@@ -158,9 +161,10 @@
 				52F9C60528D2B990004181E1 /* Button.swift in Sources */,
 				52E26A5E28D39C950043D807 /* TableViewController.swift in Sources */,
 				52F9C60728D2B9B1004181E1 /* IconTextButton.swift in Sources */,
+				F4F7F38828D543C3004B2722 /* CityViewController.swift in Sources */,
 				8BEE453428D3C8E100A9EB2B /* ImageModel.m in Sources */,
 				52D74C8328C6CF0E00686263 /* AppDelegate.swift in Sources */,
-				8B8663BF28D4DE3F00C248AD /* ViewController.swift in Sources */,
+				8B8663BF28D4DE3F00C248AD /* ExtrasViewController.swift in Sources */,
 				52D74C8528C6CF0E00686263 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
