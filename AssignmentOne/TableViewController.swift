@@ -4,7 +4,6 @@
 //
 //  Created by Muhammad Ashraf on 9/15/22.
 //
-
 import UIKit
 
 class TableViewController: UITableViewController {
@@ -14,7 +13,6 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -26,24 +24,46 @@ class TableViewController: UITableViewController {
     }()
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        if section == 0 {
+            return self.imageModel.numberOfImages()/2
+        }
+        
+        return 1
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CityViewCell", for: indexPath)
+            
+            if let name = self.imageModel.getImageName(for: indexPath.row) as? String {
+                cell.textLabel!.text = String(name.prefix(name.count-1))
+            }
+            
+            return cell
+        } else if indexPath.section == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CityViewCell", for: indexPath)
+            
+            cell.textLabel?.text = "All Cities"
+            
+            return cell
+            
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CityViewCell", for: indexPath)
+            
+            cell.textLabel?.text = "Extras"
+            
+            return cell
+            
+        }
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -61,14 +81,13 @@ class TableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
     }
     */
 
@@ -80,14 +99,16 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? CityViewController,
+           let cell = sender as? UITableViewCell,
+           let name = cell.textLabel?.text {
+            vc.displayImageName = name+"M"
+        }
     }
-    */
+    
 
 }

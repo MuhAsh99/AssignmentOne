@@ -7,6 +7,12 @@
 
 #import "ImageModel.h"
 
+@interface ImageModel ()
+
+@property (strong, nonatomic) NSArray* imageNames;
+
+@end
+
 @implementation ImageModel
 @synthesize imageNames = _imageNames;
 
@@ -22,8 +28,8 @@
 
 -(NSArray*) imageNames{
     if(!_imageNames)
-        _imageNames = @[@"DallasM",@"DallasN",@"LondonM",@"LondonN",@"TokyoM",@"TokyoN",@"NYCM",@"NYCN",@"LAM",@"LAN"];
-    
+            _imageNames = @[@"DallasM",@"LAM",@"LondonM", @"NYCM", @"TokyoM", @"DallasN",@"LAN",@"LondonN", @"NYCN",@"TokyoN"];
+        
     return _imageNames;
 }
 
@@ -36,4 +42,15 @@
     return image;
 }
 
+-(UIImage*)getImageWithIndex:(NSInteger)index{
+    return [UIImage imageNamed:self.imageNames[index]];
+}
+
+-(NSInteger) numberOfImages{
+    return [self.imageNames count];
+}
+
+-(NSString*) getImageNameForIndex:(NSInteger)index {
+    return self.imageNames[index];
+}
 @end

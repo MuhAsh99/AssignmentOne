@@ -19,6 +19,7 @@
 		52F9C60528D2B990004181E1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60428D2B990004181E1 /* Button.swift */; };
 		52F9C60728D2B9B1004181E1 /* IconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C60628D2B9B1004181E1 /* IconTextButton.swift */; };
 		8BEE453428D3C8E100A9EB2B /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE453328D3C8E100A9EB2B /* ImageModel.m */; };
+		F4C7375028D553B900A33578 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7374F28D553B900A33578 /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8BEE453128D3C8E000A9EB2B /* AssignmentOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentOne-Bridging-Header.h"; sourceTree = "<group>"; };
 		8BEE453228D3C8E100A9EB2B /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
 		8BEE453328D3C8E100A9EB2B /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		F4C7374F28D553B900A33578 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				526CCAC828D4D00B00966679 /* CollectionViewCell.swift */,
 				52E5F0CC28D52EDD00EB8219 /* ViewController.swift */,
 				52D74C8828C6CF0E00686263 /* Main.storyboard */,
+				F4C7374F28D553B900A33578 /* CityViewController.swift */,
 				52D74C8B28C6CF1100686263 /* Assets.xcassets */,
 				52D74C8D28C6CF1100686263 /* LaunchScreen.storyboard */,
 				52D74C9028C6CF1100686263 /* Info.plist */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E5F0CD28D52EDD00EB8219 /* ViewController.swift in Sources */,
+				F4C7375028D553B900A33578 /* CityViewController.swift in Sources */,
 				52F9C60528D2B990004181E1 /* Button.swift in Sources */,
 				52E26A5E28D39C950043D807 /* TableViewController.swift in Sources */,
 				526CCAC928D4D00B00966679 /* CollectionViewCell.swift in Sources */,
