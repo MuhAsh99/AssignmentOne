@@ -8,8 +8,22 @@
 import UIKit
 
 class StartPage: UIViewController {
-
     
+    @IBOutlet var mySwitch: UISwitch!
+    
+    @IBAction func switchDidChange(_ sender: UISwitch){
+        if sender.isOn{
+            view.backgroundColor = .red
+        }else{
+            view.backgroundColor = .blue
+        }
+    }
+
+    @IBOutlet weak var lb2: UILabel!
+    
+    @IBAction func stpr(_ sender: UIStepper) {
+        lb2.text = String(sender.value)
+    }
     
     @IBOutlet weak var lb: UILabel!
     @IBOutlet weak var CitiesPickerDisplay: UITextField!
@@ -25,6 +39,8 @@ class StartPage: UIViewController {
     
     var pickerView = UIPickerView()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,9 +51,12 @@ class StartPage: UIViewController {
         CitiesPickerDisplay.inputView = pickerView
         CitiesPickerDisplay.textAlignment = .center
         
-        // Do any additional setup after loading the view.
+       
+    
     }
-
+    
+    
+    
 }
 
 extension StartPage:UIPickerViewDelegate, UIPickerViewDataSource{
@@ -57,3 +76,8 @@ extension StartPage:UIPickerViewDelegate, UIPickerViewDataSource{
         CitiesPickerDisplay.resignFirstResponder()
     }
 }
+
+
+
+
+
