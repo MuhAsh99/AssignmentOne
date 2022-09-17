@@ -11,13 +11,14 @@ class StartPage: UIViewController {
 
     
     
+    @IBOutlet weak var lb: UILabel!
     @IBOutlet weak var CitiesPickerDisplay: UITextField!
-    @IBOutlet weak var buttony: UILabel!
+   
     @IBAction func myButton(_ sender: Any) {
         
         print("button was pressed!")
         
-        label.text = "Mini Game: Click as many times as you can!"
+        lb.text = "Mini Game: Click the stepper!"
     }
 
     let cities = ["Dallas","NYC","LA","London","Tokyo"]

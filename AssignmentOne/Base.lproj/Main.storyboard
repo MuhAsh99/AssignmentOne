@@ -186,23 +186,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufO-Xq-CCB">
-                                <rect key="frame" x="170" y="275" width="75" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="UIButton:" destination="ta5-sg-saI" eventType="touchUpInside" id="aur-mR-7BD"/>
-                                    <action selector="myButton:" destination="UBv-mJ-Zwq" eventType="touchUpInside" id="cfO-Xj-pKN"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click for Magic" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Env-fh-lgH">
-                                <rect key="frame" x="150" y="229" width="114" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Org-a5-ZzV">
-                                <rect key="frame" x="42" y="410" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click for Magic" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Env-fh-lgH">
+                                <rect key="frame" x="150" y="92" width="114" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -218,21 +203,31 @@
                                 <rect key="frame" x="160" y="328" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufO-Xq-CCB">
+                                <rect key="frame" x="170" y="121" width="75" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="UIButton:" destination="ta5-sg-saI" eventType="touchUpInside" id="aur-mR-7BD"/>
+                                    <action selector="myButton:" destination="UBv-mJ-Zwq" eventType="touchUpInside" id="cfO-Xj-pKN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGL-QW-817">
+                                <rect key="frame" x="20" y="182" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X3C-9D-8YF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Env-fh-lgH" firstAttribute="centerX" secondItem="dof-fE-XjW" secondAttribute="centerX" id="1FV-Kg-Ji5"/>
-                            <constraint firstItem="Env-fh-lgH" firstAttribute="top" secondItem="X3C-9D-8YF" secondAttribute="top" constant="382" id="83b-E7-K0n"/>
-                            <constraint firstItem="Env-fh-lgH" firstAttribute="top" secondItem="X3C-9D-8YF" secondAttribute="top" constant="382" id="UV1-lu-1Oj"/>
-                            <constraint firstItem="Env-fh-lgH" firstAttribute="top" secondItem="ufO-Xq-CCB" secondAttribute="bottom" constant="8" id="br5-k6-4MR"/>
-                            <constraint firstItem="Env-fh-lgH" firstAttribute="centerX" secondItem="ufO-Xq-CCB" secondAttribute="centerX" id="e26-pe-LFZ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Extras" id="KQM-05-zEQ"/>
                     <connections>
                         <outlet property="CitiesPickerDisplay" destination="LMk-m1-wW3" id="E3H-4w-XhH"/>
-                        <outlet property="buttony" destination="Org-a5-ZzV" id="kH7-0O-QMD"/>
+                        <outlet property="lb" destination="LGL-QW-817" id="fCG-ab-nbg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAK-44-fr4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
