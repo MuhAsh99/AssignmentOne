@@ -1,6 +1,6 @@
 import UIKit
 
-private let reuseIdentifier = "CollectCell"
+private let reuseIdentifier = "ImageCell"
 
 class CollectionViewController: UICollectionViewController {
 
