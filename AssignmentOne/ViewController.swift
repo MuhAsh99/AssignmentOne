@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class StartPage: UIViewController {
+class StartPage: UIViewController, Modal_View_Delegate {
     
     @IBOutlet var mySwitch: UISwitch!
     
@@ -27,7 +27,8 @@ class StartPage: UIViewController {
     
     @IBOutlet weak var lb: UILabel!
     @IBOutlet weak var CitiesPickerDisplay: UITextField!
-   
+    @IBOutlet weak var label: UILabel!
+    
     @IBAction func myButton(_ sender: Any) {
         
         print("button was pressed!")
@@ -55,8 +56,12 @@ class StartPage: UIViewController {
     
     }
     
-    
-    
+    func credits_viewing_time(time: Int )
+     {
+      
+             label.text = String(time) + " seconds Professor viewed the credits "
+             
+     }
 }
 
 extension StartPage:UIPickerViewDelegate, UIPickerViewDataSource{
