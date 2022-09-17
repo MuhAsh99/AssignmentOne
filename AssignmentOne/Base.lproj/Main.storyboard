@@ -132,14 +132,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I33-Yx-xtL">
-                                <rect key="frame" x="154.5" y="759.5" width="105" height="32"/>
-                                <segments>
-                                    <segment title="Day"/>
-                                    <segment title="Night"/>
-                                </segments>
-                                <color key="selectedSegmentTintColor" systemColor="systemBackgroundColor"/>
-                            </segmentedControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GfS-zp-cZd">
                                 <rect key="frame" x="0.0" y="124" width="414" height="521"/>
                                 <constraints>
@@ -149,14 +141,26 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="9ev-6g-Yc9"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Uxt-vv-K0l"/>
                             </scrollView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I33-Yx-xtL">
+                                <rect key="frame" x="155" y="680" width="105" height="32"/>
+                                <segments>
+                                    <segment title="Day"/>
+                                    <segment title="Night"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="lOj-1s-QxF" eventType="valueChanged" id="ts2-YM-ao0"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rcd-9g-Pme"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="I33-Yx-xtL" firstAttribute="top" secondItem="GfS-zp-cZd" secondAttribute="bottom" constant="88" id="Gvb-08-zQb"/>
+                            <constraint firstItem="I33-Yx-xtL" firstAttribute="top" secondItem="GfS-zp-cZd" secondAttribute="bottom" constant="35" id="3ji-yQ-heT"/>
                             <constraint firstItem="GfS-zp-cZd" firstAttribute="centerY" secondItem="Rcd-9g-Pme" secondAttribute="centerY" id="If2-0O-If7"/>
                             <constraint firstItem="GfS-zp-cZd" firstAttribute="centerX" secondItem="Rcd-9g-Pme" secondAttribute="centerX" id="KzV-kV-RJ8"/>
                             <constraint firstItem="I33-Yx-xtL" firstAttribute="centerX" secondItem="Rcd-9g-Pme" secondAttribute="centerX" id="LNH-iK-c8a"/>
+                            <constraint firstItem="I33-Yx-xtL" firstAttribute="centerX" secondItem="pNb-1y-5GO" secondAttribute="centerX" id="fYP-XC-epd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -172,6 +176,7 @@
                     <navigationItem key="navigationItem" title="City View" id="ahK-T4-CCe"/>
                     <connections>
                         <outlet property="scrollView" destination="GfS-zp-cZd" id="f89-Z7-JJ6"/>
+                        <outlet property="segmentedControl" destination="I33-Yx-xtL" id="ot3-on-xm4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2GA-72-Ieo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

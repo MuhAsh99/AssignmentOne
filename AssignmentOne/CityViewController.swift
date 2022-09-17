@@ -11,6 +11,8 @@ class CityViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     lazy var imageModel = {
         return ImageModel.sharedInstance()
     }()
@@ -36,15 +38,14 @@ class CityViewController: UIViewController, UIScrollViewDelegate {
         return self.imageView
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+        if displayImageName.hasSuffix("M") {
+            displayImageName.removeLast(1)
+            displayImageName += "N"
+        } else {
+            displayImageName.removeLast(1)
+            displayImageName += "M"
+        }
+        self.imageView?.image = imageModel.getImageWithName(displayImageName)
     }
-    */
-
 }
